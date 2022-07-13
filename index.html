@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openlayers web map</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./libs/v6.11.0-dist/ol.css">
+</head>
+<body>
+    <div style="height: 600px; background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,30,121,1) 14%, rgba(0,212,255,1) 100%); color: white;">
+    <style>
+        center h3{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+        <center>
+            <h1 style="padding-top: 150px; font-weight: bold; font-size: 40px;">KELOMPOK 4</h1> <br> <br>
+            <h3>Muhamad Rajab Ode Utu (19650123)</h3> 
+            <h3>Muh. Arif Ardiansyah (19650133)</h3> 
+            <h3>Fonianti (19650134)</h3> 
+            <h3>Ade Riski (19650125)</h3>
+        </center>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Peta Persebaran Covid 19 pada tanggal 09-Juli-2022</h2>
+                <input type="radio" name="baseLayerRadioButton" value="OSMStandard" > OSM Standar <br>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+
+    <div class="overlay-container" style="width: 300px;">
+        Nama Provinsi : <span class="overlay-text" id="feature-name"></span><br>
+        Tanggal : <span class="overlay-text" id="feature-tanggal"></span><br>
+        Terkonfirmasi : <span class="overlay-text" id="feature-terkonfirmasi"></span><br>
+        Kasus Baru : <span class="overlay-text" id="feature-kasus-baru"></span><br>
+        Total Meninggal : <span class="overlay-text" id="feature-total-meninggal"></span><br>
+        Baru Meninggal : <span class="overlay-text" id="feature-baru-meninggal"></span><br>
+        Total Sembuh : <span class="overlay-text" id="feature-total-sembuh"></span><br>
+        Baru Sembuh : <span class="overlay-text" id="feature-baru-sembuh"></span><br>
+        Kasus Aktif : <span class="overlay-text" id="feature-kasus-aktif"></span><br>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./libs/v6.11.0-dist/ol.js"></script>
+</body>
+</html>
